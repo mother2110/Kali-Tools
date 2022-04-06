@@ -15,7 +15,7 @@ echo -e "${Yellow}Installing Tools...${ENDCOLOR}"
 
 cd /opt
 
-echo -e "${Yellow)Pimpmykali Setup${ENDCOLOR}"
+echo -e "${Yellow}Pimpmykali Setup${ENDCOLOR}"
 git clone https://github.com/Dewalt-arch/pimpmykali
 cd pimpmykali
 sudo ./pimpmykali.sh
