@@ -3,6 +3,14 @@
 Yellow="\e[33m"
 ENDCOLOR="\e[0m"
 
+echo -e "${YELLOW}Setting up enviroment${ENDCOLOR}"
+echo export GDK_SCALE=2 >> ~/.xsessionrc
+xfconf-query -c xfwm4 -p /general/theme -s Kali-Dark-xHiDPI
+xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -n -t 'int' -s 2
+echo export QT_SCALE_FACTOR=2 >> ~/.xsessionrc
+echo export XCURSOR_SIZE=48 >> ~/.xsessionrc
+
+
 echo -e "${Yellow}Installing Tools...${ENDCOLOR}"
 
 cd /opt
