@@ -43,6 +43,7 @@ echo -e "${Yellow}Downloading Namemash${ENDCOLOR}"
 wget https://gist.githubusercontent.com/superkojiman/11076951/raw/053152dba6c5cc3107ff0374ce7246306958d72c/namemash.py
 
 echo -e "${Yellow}Installing CME${ENDCOLOR}"
+sudo apt install python3.9-venv
 sudo python3 -m pip install pipx
 sudo pipx ensurepath
 sudo pipx install crackmapexec
