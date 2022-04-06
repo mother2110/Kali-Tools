@@ -50,6 +50,11 @@ pip3 install -r Oh365UserFinder/requirements.txt
 
 cd /opt
 
+echo -e "${Yellow}Installing CME${ENDCOLOR}"
+python3 -m pip install pipx
+pipx ensurepath
+pipx install crackmapexec
+
 echo -e "${Yellow}Installing ReconFTW...${ENDCOLOR}"
 git clone https://github.com/six2dez/reconftw
 cd reconftw/
