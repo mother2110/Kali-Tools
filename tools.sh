@@ -62,6 +62,7 @@ cd reconftw/
 sudo ./install.sh
 
 cd /opt
+echo -e "${Yellow}Installing Pretender...${ENDCOLOR}"
 git clone https://github.com/RedTeamPentesting/pretender.git
 cd pretender
 go build
