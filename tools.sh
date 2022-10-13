@@ -68,4 +68,10 @@ cd pretender
 go build
 
 cd /opt
+echo -e "${Yellow}Installing geeMailFinder...${ENDCOLOR}"
+git clone https://github.com/dievus/geeMailUserFinder.git
+cd geeMailFinder
+pip3 install -r requirements.txt
+
+cd /opt
 exit
