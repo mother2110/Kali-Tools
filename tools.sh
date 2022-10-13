@@ -62,4 +62,9 @@ cd reconftw/
 sudo ./install.sh
 
 cd /opt
+git clone https://github.com/RedTeamPentesting/pretender.git
+cd pretender
+go build
+
+cd /opt
 exit
