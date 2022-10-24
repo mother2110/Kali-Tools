@@ -74,4 +74,12 @@ cd geeMailFinder
 pip3 install -r requirements.txt
 
 cd /opt
+
+echo -e "${Yellow}Installing Aresenal...${ENDCOLOR}
+git clone https://github.com/Orange-Cyberdefense/arsenal.git
+cd arsenal
+python3 -m pip install -r requirements.txt
+ln -s /usr/bin/crackmapexec /usr/bin/cme
+
+cd /opt
 exit
