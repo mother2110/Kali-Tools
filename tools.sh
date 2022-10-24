@@ -40,11 +40,8 @@ wget https://gist.githubusercontent.com/superkojiman/11076951/raw/053152dba6c5cc
 
 cd /opt
 echo -e "${Yellow}Installing CME${ENDCOLOR}"
-sudo apt-get install -y libssl-dev libkrb5-dev libffi-dev python-dev build-essential
-sudo git clone https://github.com/Porchetta-Industries/CrackMapExec
-cd CrackMapExec
-sudo poetry install
-sudo poetry run crackmapexec
+sudo apt-get install -y libkrb5-dev 
+sudo apt install crackmapexec
 
 cd /opt
 echo -e "${Yellow}Installing oh365UserFinder${ENDCOLOR}" 
