@@ -23,7 +23,7 @@ sudo ./pimpmykali.sh
 cd /opt
 
 echo -e "${Yellow}lnkbomb${ENDCOLOR}"
-git clone https://github.com/dievus/lnkbomb.git
+sudo git clone https://github.com/dievus/lnkbomb.git
 
 echo -e "${Yellow}Instslling threasder3000...${ENDCOLOR}"
 cd threader3000
@@ -32,7 +32,7 @@ sudo pip3 install threader3000
 cd /opt
 
 echo -e "${Yellow}Instslling DNS Scanner...${ENDCOLOR}"
-git clone https://github.com/dievus/msdnsscan.git
+sudo git clone https://github.com/dievus/msdnsscan.git
 cd msdnsscan
 sudo pip3 install -r requirements.txt
 
@@ -50,36 +50,36 @@ sudo pipx install crackmapexec
 
 echo -e "${Yellow}Installing oh365UserFinder${ENDCOLOR}" 
 
-git clone https://github.com/dievus/Oh365UserFinder.git
+sudo git clone https://github.com/dievus/Oh365UserFinder.git
 cd oh365UserFinder
 sudo pip3 install -r Oh365UserFinder/requirements.txt
 
 cd /opt
 
 echo -e "${Yellow}Installing ReconFTW...${ENDCOLOR}"
-git clone https://github.com/six2dez/reconftw
+sudo git clone https://github.com/six2dez/reconftw
 cd reconftw/
 sudo ./install.sh
 
 cd /opt
 echo -e "${Yellow}Installing Pretender...${ENDCOLOR}"
-git clone https://github.com/RedTeamPentesting/pretender.git
+sudo git clone https://github.com/RedTeamPentesting/pretender.git
 cd pretender
-go build
+sudo go build
 
 cd /opt
 echo -e "${Yellow}Installing geeMailFinder...${ENDCOLOR}"
-git clone https://github.com/dievus/geeMailUserFinder.git
+sudo git clone https://github.com/dievus/geeMailUserFinder.git
 cd geeMailFinder
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 
 cd /opt
 
 echo -e "${Yellow}Installing Aresenal...${ENDCOLOR}
-git clone https://github.com/Orange-Cyberdefense/arsenal.git
+sudo git clone https://github.com/Orange-Cyberdefense/arsenal.git
 cd arsenal
-python3 -m pip install -r requirements.txt
-ln -s /usr/bin/crackmapexec /usr/bin/cme
+sudo python3 -m pip install -r requirements.txt
+sudo ln -s /usr/bin/crackmapexec /usr/bin/cme
 
 cd /opt
 exit
